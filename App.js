@@ -15,7 +15,10 @@ export default class App extends Component {
   render() {
     return (
       <View>
-      <Judul/>
+      <Judul title="BIODATA"/>
+      <Judul title="LOGIN"/>
+      <Judul title="FORM"/>
+
         <Text style={styles.welcome}>Welcome!</Text>
         <Text style={styles.instructions}>Ana Yuni Zhafira </Text>
         <Text style={styles.instructions}>XI RPL 4 </Text>
