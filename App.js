@@ -7,21 +7,23 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, Text, View,Image } from 'react-native';
+import {Platform, StyleSheet, Text, View,Image } from 'react-native';
+import Judul from'./Component/Judul';
 
 
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View>
+      <Judul/>
         <Text style={styles.welcome}>Welcome!</Text>
         <Text style={styles.instructions}>Ana Yuni Zhafira </Text>
         <Text style={styles.instructions}>XI RPL 4 </Text>
         <Text style={styles.instructions}>Absen 05 </Text>
-        <Image style={{width:300,height:300}}
+        <Image style={{width:375,height:350}}
         source={require('./anay.png')}/>
       </View>
-    );
+    )
   }
 }
 
