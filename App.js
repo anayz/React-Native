@@ -7,21 +7,19 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View,Image } from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Ana Yuni Zhafira\n' + 'XI RPL 4\n' + 'Absen 05',
-  android:
-    'Ana Yuni Zhafira\n' + 'XI RPL 4\n' + 'Absen 05',
-});
 
-type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome!</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.instructions}>Ana Yuni Zhafira </Text>
+        <Text style={styles.instructions}>XI RPL 4 </Text>
+        <Text style={styles.instructions}>Absen 05 </Text>
+        <Image style={{width:300,height:300}}
+        source={require('./anay.png')}/>
       </View>
     );
   }
